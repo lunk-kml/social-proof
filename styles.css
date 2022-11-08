@@ -1,0 +1,214 @@
+body {
+  font-family: "League Spartan", sans-serif;
+  background-image: url(./images/bg-pattern-top-mobile.svg),
+    url(./images/bg-pattern-bottom-mobile.svg);
+}
+
+/* Info */
+.info {
+  margin: 0.94rem auto 3.125rem;
+}
+
+h1 {
+  margin: 4.7rem 2rem 2.3rem;
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-align: center;
+  line-height: 2rem;
+  color: hsl(300, 43%, 22%);
+}
+
+.description {
+  margin: 0 0.8rem 2.3rem;
+  font-size: 1rem;
+  font-weight: 545;
+  text-align: center;
+  line-height: 1.6875rem;
+  color: hsl(303, 10%, 53%);
+}
+
+.purple-card {
+  margin: 1rem auto;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 0.7rem;
+  background-color: hsl(300, 24%, 96%);
+}
+
+.stars {
+  margin-top: 1.25rem;
+  text-align: center;
+}
+
+.stars img {
+  margin: 0 0.16rem;
+}
+
+.purple-card p {
+  margin-top: 0.5rem;
+  font-weight: 800;
+  font-size: 0.875rem;
+  color: hsl(300, 43%, 22%);
+}
+
+/* buyer card */
+.testimonial {
+  margin-bottom: 3rem;
+}
+
+.buyer {
+  margin: 0.94rem;
+  width: auto;
+  min-height: 30vh;
+  display: flex;
+  border-radius: 0.7rem;
+
+  background-color: hsl(300, 43%, 22%);
+  color: white;
+}
+
+.buyer .customer {
+  display: block;
+  margin: 1.875rem;
+}
+
+.buyer img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 3rem;
+  height: 3rem;
+  display: inline;
+  vertical-align: middle;
+  margin-right: 0.9375rem;
+}
+
+.buyer .name {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 0.3125rem;
+  font-weight: bold;
+  font-size: 0.9375rem;
+}
+
+.quote {
+  margin: 1.5625rem 0rem 0rem;
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+}
+
+/* Desktop Version */
+@media (min-width: 81.25rem) {
+  body {
+    margin: 7rem;
+    background-image: url(./images/bg-pattern-top-desktop.svg),
+      url(./images/bg-pattern-bottom-desktop.svg);
+    background-size: cover cover;
+    background-repeat: repeat-x;
+  }
+  h1 {
+    display: flex;
+    margin: 3.125rem 0rem 3.125rem;
+    width: 31.25rem;
+    font-size: 3.4375rem;
+    line-height: 3.125rem;
+    text-align: left;
+  }
+  .description {
+    display: flex;
+    text-align: left;
+    margin: 3.125rem 0rem 3.125rem;
+    width: 31.25rem;
+    font-size: 1.25rem;
+    line-height: 2.0625rem;
+  }
+  /*Purple Card*/
+  .purple-card {
+    height: 3.75rem;
+  }
+  .ratings {
+    width: 31.25rem;
+    position: absolute;
+    top: 6.875rem;
+    left: 45.3125rem;
+  }
+  .stars {
+    margin-top: 1.25rem;
+  }
+  .purple-card p {
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 0.3125rem;
+    font-size: 0.9375rem;
+  }
+  #card1 {
+    position: relative;
+  }
+  #card2 {
+    left: 3.125rem;
+    position: relative;
+  }
+  #card3 {
+    left: 6.25rem;
+    position: relative;
+  }
+  /*Buyers*/
+  .testimonial {
+    display: flex;
+    height: 23.5rem;
+  }
+  #buyer1 {
+    height: 17.125rem;
+  }
+  #buyer2 {
+    margin-top: 1.25rem;
+    height: 17.125rem;
+  }
+  #buyer3 {
+    margin-top: 2.5rem;
+    height: 17.125rem;
+  }
+}
+/* Laptop */
+@media (min-width: 62.5rem) {
+  /*Buyers*/
+  .testimonial {
+    display: flex;
+    height: 23.5rem;
+  }
+  .buyer {
+    width: 25rem;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  #buyer1 {
+    height: 17.125rem;
+  }
+  #buyer2 {
+    margin-top: 1.25rem;
+    height: 17.125rem;
+  }
+  #buyer3 {
+    margin-top: 2.5rem;
+    height: 17.125rem;
+  }
+}
+/* Footer */
+.attribution {
+  font-size: 0.7rem;
+  text-align: center;
+  color: darkgray;
+  font-style: italic;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover {
+  text-decoration: none;
+}
